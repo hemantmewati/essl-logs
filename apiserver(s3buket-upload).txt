@@ -1,0 +1,37 @@
+
+live_apiserver exe file uploded on s3 buket
+
+
+screen -ls
+screen -ls su 
+su www-data
+mc mv -a -r --older-than 9d24h  /var/www/html/app.ngageapp.com/new_backend/mspp/promotion/siccura_upload/* sukey/siccuraupload/
+
+
+============================================================================================================
+
+ mc mv -a -r --older-than 30d24h  /var/www/html/app.ngageapp.com/new_backend/mspp/promotion/siccura_upload/* sukey/siccuraupload/
+
+
+
+====================================================================================================================================
+https://app.ngageapp.com/new_backend/mspp/promotion/siccura_upload/211220120516mysiccura_windows-x64_15_0_5.exe
+
+
+
+ cd promotion/siccura_
+ 1379  cd promotion/siccura_upload
+ 1380  ls
+ 1381  ls -l | grep 210827072
+ 1382  ls -l | grep 21082
+ 1383  s3cmd ls
+ 1384  s3cmd ls s3://siccuraupload | grep 2108270
+ 1385  s3cmd ls s3://siccuraupload | grep 640
+ 1386  s3cmd ls s3://siccuraupload | grep 210827072640
+ 1387  ls -l | grep 210827072640
+ 1388  s3cmd get s3://siccuraupload/210827072640mysiccura_windows-x64_1_8_79.exe
+ 1389  ls -l | grep 210827072640
+ 1390  chown -R www-data:www-data 210827072640mysiccura_windows-x64_1_8_79.exe
+ 1391  ls -l | grep 210827072640
+ 1392  ls -l
+ 1393  df -h
